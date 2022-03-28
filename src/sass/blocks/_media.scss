@@ -4,14 +4,58 @@
 
 	.advantage {
 	}
+	.carousel {
+		.prev {
+			left: 30px;
+		}
+		.next {
+			right: 30px;
+		}
+	}
 }
-@media (max-width: 991px) {
+@media (max-width: 990px) {
 	.promo {
 		padding: 21px 20px 93px 20px;
 	}
 
 	.advantage {
 		padding: 50px 20px 62px 20px;
+	}
+	.consultation {
+		.container {
+			padding: 0px 20px 62px 40px;
+		}
+		.title {
+			font-size: 30px;
+		}
+	}
+	.carousel {
+		.prev,
+		.next {
+			display: none;
+		}
+		.tns-nav {
+			width: 210px;
+			margin: 0 auto;
+			display: flex;
+			margin-bottom: 30px;
+			justify-content: space-between;
+			align-items: center;
+
+			button {
+				height: 30px;
+				width: 30px;
+				border-radius: 100%;
+				background: #000;
+				opacity: 0.2;
+				transition: all 0.6s ease-out;
+			}
+			.tns-nav-active {
+				width: 45px;
+				height: 45px;
+				opacity: 0.4;
+			}
+		}
 	}
 }
 @media (max-width: 767px) {
@@ -21,6 +65,19 @@
 
 	.advantage {
 		padding: 50px 20px 62px 20px;
+	}
+	.consultation {
+		.title {
+			font-size: 30px;
+		}
+	}
+
+	.carousel {
+		.tns-item {
+			img {
+				width: 80%;
+			}
+		}
 	}
 }
 @media (max-width: 575px) {
@@ -90,6 +147,30 @@
 		}
 		&__discr {
 			font-size: 17px;
+		}
+	}
+	.consultation {
+		.title {
+			font-size: 22px;
+			line-height: 35px;
+		}
+		&__descr {
+			padding-top: 18px;
+			line-height: 22px;
+			//margin-top: 30px;
+		}
+	}
+	.carousel {
+		.tns-nav {
+			button {
+				height: 20px;
+				width: 20px;
+			}
+			.tns-nav-active {
+				width: 30px;
+				height: 30px;
+				opacity: 0.4;
+			}
 		}
 	}
 }

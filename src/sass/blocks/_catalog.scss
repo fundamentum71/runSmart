@@ -38,6 +38,12 @@
 	}
 	&__content {
 		margin-top: 60px;
+		display: none;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&_active {
+			display: flex;
+		}
 	}
 	//!card
 	&-item {
@@ -45,6 +51,7 @@
 		min-height: 440px;
 		border: 2px solid #e8e8e8;
 		padding: 20px 20px 26px 20px;
+		margin-bottom: 20px;
 		overflow: hidden;
 		&__img {
 			max-width: 100%;
@@ -71,6 +78,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			color: $main-color;
+			text-transform: uppercase;
 			text-decoration: underline;
 			text-align: center;
 			display: block;
@@ -80,6 +88,7 @@
 		}
 		hr {
 			background: #e8e8e8;
+			opacity: 1;
 			margin-top: 19px;
 			margin-bottom: 21px;
 			height: 2px;
@@ -106,11 +115,27 @@
 		}
 		&__content {
 			width: 50%;
+			transition: 0.5s all;
 			margin-right: 0px;
 			transform: translateX(-100%);
 			&_active {
 				transform: translateX(0%);
 				margin-right: 20px;
+			}
+		}
+		&__back {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(calc(-50% - 19px));
+			text-transform: uppercase;
+			color: $main-color;
+			display: block;
+
+			font-size: 14px;
+			font-weight: 500;
+			&:hover {
+				color: $main-color;
 			}
 		}
 		&__list {
@@ -123,6 +148,7 @@
 			padding-left: 19px;
 			margin-bottom: 0;
 			list-style-type: none;
+
 			&_active {
 				transform: translateX(-100%);
 				margin-left: 0px;

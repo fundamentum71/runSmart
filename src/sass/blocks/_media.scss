@@ -7,6 +7,10 @@
 			right: 30px;
 		}
 	}
+	.reviews {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media (max-width: 990px) {
 	.promo {
@@ -187,7 +191,6 @@
 		&__descr {
 			padding-top: 18px;
 			line-height: 22px;
-			//margin-top: 30px;
 		}
 	}
 	.carousel {
@@ -203,6 +206,23 @@
 				height: 30px;
 				opacity: 0.4;
 			}
+		}
+	}
+	.reviews {
+		&__wrape {
+			flex-direction: column;
+			justify-content: center;
+			img {
+				margin: 0 auto;
+				margin-bottom: 40px;
+			}
+		}
+		&__user-name {
+			text-align: center;
+		}
+		&__distans {
+			text-align: center;
+			margin-bottom: 20px;
 		}
 	}
 }

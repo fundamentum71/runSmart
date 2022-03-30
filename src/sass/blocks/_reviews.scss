@@ -1,0 +1,33 @@
+.reviews {
+	min-height: 920px;
+	padding-bottom: 20px;
+	&_pading {
+		padding-bottom: 60px;
+	}
+	&__wrape {
+		display: flex;
+		align-items: flex-start;
+		padding-bottom: 60px;
+		img {
+			width: 169px;
+			height: 169px;
+			margin-right: 61px;
+		}
+	}
+	&__user-name {
+		font-weight: 700;
+		font-size: 18px;
+		color: #0d0d0d;
+	}
+	&__distans {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		color: #646464;
+	}
+	&__discr {
+		font-weight: 300;
+		font-size: 16px;
+		color: #0d0d0d;
+	}
+}

@@ -10,6 +10,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
+
 	&_main {
 		margin-top: 67px;
 		width: 300px;
@@ -25,5 +26,22 @@
 		width: 131px;
 		height: 40px;
 		font-size: 14px;
+	}
+	&:hover {
+		background: #7e0808;
+	}
+	&:active {
+		box-shadow: 1px 1px 1px black;
+	}
+}
+@media (max-width: 576px) {
+	.button {
+		&:hover {
+			background: $main-color;
+		}
+		&:active {
+			background: #7e0808;
+			box-shadow: 1px 1px 1px black;
+		}
 	}
 }

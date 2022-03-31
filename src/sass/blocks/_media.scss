@@ -250,4 +250,13 @@
 			margin-bottom: 10px;
 		}
 	}
+
+	.modal {
+		&__close {
+			top: 0;
+			right: 20px;
+			font-size: 41px;
+			line-height: 40px;
+		}
+	}
 }

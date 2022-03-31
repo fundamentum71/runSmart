@@ -1,3 +1,5 @@
+//const { on } = require('gulp');
+
 //!tini-slider
 const slider = tns({
 	container: '.carousel__inner',
@@ -58,4 +60,19 @@ $(document).ready(function () {
 	}
 	toggleSlaid('.catalog-item__link');
 	toggleSlaid('.catalog-item__back');
+
+	//modal
+	$('[data-modal=consultation]').on('click', function () {
+		$('.overlay, #consultation').fadeIn('fast');
+	});
+	$('.modal__close').on('click', function () {
+		$('.overlay, #consultation, #thanks, #order').fadeOut('fast');
+	});
+
+	$('.button_mini').each(function (i) {
+		$(this).on('click', function () {
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('fast');
+		});
+	});
 });
